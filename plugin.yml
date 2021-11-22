@@ -3,3 +3,8 @@ version: 0.1
 name: ProCore
 authors: [iAtog, Jonakls]
 description: code in depression BETA
+
+commands:
+  gm:
+    description: gm
+    aliases: [gamemode, gmemode, gamemod, gamemoe]
