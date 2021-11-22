@@ -24,7 +24,7 @@ public class GameModeCommand implements CommandExecutor {
 			}
 			String g  = a[0];
 			Player p   = null;
-			if(a.length > 1)  p =  Bukkit.getPlayer(a[2]);
+			if(a.length > 1)  p =  Bukkit.getPlayer(a[1]);
 			
 			if(p == null) {
 				s.sendMessage("&c:'v".replace('&', '§'));
