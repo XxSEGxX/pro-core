@@ -18,7 +18,7 @@ public class PluginCommandFlyMode
         String no_permission = "You dont have permissions :''v";
 
         if (!(s instanceof Player)) {
-            String no_console = "You dont use this command in console";
+            String no_console = "you cant use this function used to execute preset actions by placing a text in the server console";
             Level info = Level.INFO;
 
             s.getServer().getLogger().log(info, no_console);
