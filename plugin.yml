@@ -8,3 +8,6 @@ commands:
   gm:
     description: gm
     aliases: [gamemode, gmemode, gamemod, gamemoe]
+  fly:
+    description: fly
+    aliases: [f, plf, flight, volar, vl]
