@@ -31,5 +31,4 @@ public class PlayerEntrar implements Listener {
             event.setJoinMessage(null);
         }
     }
-
 }
