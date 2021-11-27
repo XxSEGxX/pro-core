@@ -15,7 +15,7 @@ public class ProCorePlugin extends JavaPlugin {
 		ProCorePlugin2.onDisable(this);
 	}
 	
-	public void registerCommandos() {
+	public final void registerCommandos() {
 		getCommand("gm").setExecutor(new GameModeCommand());
 		getCommand("fly").setExecutor(new PluginCommandFlyMode());
 	}
