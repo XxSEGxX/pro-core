@@ -7,11 +7,11 @@ import me.atog.procore.commandos.GameModeCommand;
 
 public class ProCorePlugin extends JavaPlugin {
 	
-	public void onEnable() {
+	public final void onEnable() {
 		ProCorePlugin2.onEnable(this);
 	}
 	
-	public void onDisable() {
+	public final void onDisable() {
 		ProCorePlugin2.onDisable(this);
 	}
 	

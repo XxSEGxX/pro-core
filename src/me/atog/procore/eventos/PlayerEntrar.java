@@ -1,5 +1,6 @@
 package me.atog.procore.eventos;
 
+import com.sun.istack.internal.NotNull;
 import me.atog.procore.ProCorePlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -13,12 +14,13 @@ public class PlayerEntrar implements Listener {
 
     ProCorePlugin plugin;
 
-    public PlayerEntrar(ProCorePlugin plugin) {
+    public PlayerEntrar(@NotNull ProCorePlugin plugin) {
         this.plugin = plugin;
     }
 
+    @NotNull
     @EventHandler
-    public void alEntrar(PlayerJoinEvent event) {
+    public final void alEntrar(@NotNull PlayerJoinEvent event) {
         FileConfiguration config = plugin.getConfig();
 
         if (config.getString("EVENTS.JOIN_EVENT.ENABLE").toUpperCase() == "TRUE") {
