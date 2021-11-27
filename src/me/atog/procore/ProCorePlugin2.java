@@ -7,7 +7,7 @@ import java.io.File;
 
 public class ProCorePlugin2 {
 
-	private static String rutaConfig;
+	public static String rutaConfig;
 
 	public final static void onEnable(@NotNull ProCorePlugin plugin) {
 		System.out.print("&aPlugin enabled".replace('&', '§'));

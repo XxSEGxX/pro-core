@@ -1,10 +1,11 @@
 package me.atog.procore;
 
 import com.sun.istack.internal.NotNull;
-import me.atog.procore.commandos.PluginCommandFlyMode;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.atog.procore.commandos.DestroyCommand;
 import me.atog.procore.commandos.GameModeCommand;
+import me.atog.procore.commandos.PluginCommandFlyMode;
 
 public class ProCorePlugin extends JavaPlugin {
 
@@ -23,6 +24,7 @@ public class ProCorePlugin extends JavaPlugin {
 	@NotNull public final void registerCommandos() {
 		getCommand("gm").setExecutor(new GameModeCommand());
 		getCommand("fly").setExecutor(new PluginCommandFlyMode());
+		getCommand("destroy").setExecutor(new DestroyCommand());
 	}
 	
 }

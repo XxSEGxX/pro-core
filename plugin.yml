@@ -11,3 +11,6 @@ commands:
   fly:
     description: fly
     aliases: [f, plf, flight, volar, vl]
+  destroy:
+    description: destroy
+    aliases: [destroy, kaboom, boom, bye, gusbai, destruir]
