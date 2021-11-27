@@ -21,16 +21,19 @@ public class PlayerEntrar implements Listener {
     @NotNull
     @EventHandler
     public final void alEntrar(@NotNull PlayerJoinEvent event) {
-        FileConfiguration config = plugin.getConfig();
+    	new Thread() {
+    		public void run() {
+    			FileConfiguration config = plugin.getConfig();
+        		if (config.getString("EVENTS.JOIN_EVENT.ENABLE").toString().toUpperCase() == "TRUE") {
+                    event.setJoinMessage(null);
 
-        if (config.getString("EVENTS.JOIN_EVENT.ENABLE").toUpperCase() == "TRUE") {
-            event.setJoinMessage(null);
-
-            for (Player player : Bukkit.getOnlinePlayers()) {
-                player.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("EVENTS.JOIN_EVENT.MESSAGE")));
-            }
-        } else {
-            event.setJoinMessage(null);
-        }
+                    for (Player player : Bukkit.getOnlinePlayers()) {
+                        player.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("EVENTS.JOIN_EVENT.MESSAGE")));
+                    }
+                } else {
+                    event.setJoinMessage(null);
+                }
+    		}
+    	};
     }
 }
