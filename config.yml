@@ -1,0 +1,4 @@
+EVENTS:
+  JOIN_EVENT:
+    ENABLE: true
+    MESSAGE: "&8[&a+&8] &7Hello &a%player% &7to the server!"
