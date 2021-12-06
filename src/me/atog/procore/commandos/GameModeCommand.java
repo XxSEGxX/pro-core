@@ -7,21 +7,26 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class GameModeCommand implements CommandExecutor {
+public class GameModeCommand implements CommandExecutor
+{
 
 	// Best command of minecraft!
 
 	@SuppressWarnings("unused")
 	@Override
-	public boolean onCommand(CommandSender s, Command c, String l, String[] a) {
-		while (true) {
-			if (!(!(!(!(!(s instanceof Player))))) && !!(a.length <= 1)) {
-				s.sendMessage("&cyou aren't a player".replace('&', '§'));
+	public boolean onCommand(CommandSender s, Command c, String l, String[] a)
+	{
+		while (true)
+		{
+			if (!(!(!(!(!(s instanceof Player))))) && !!(a.length <= 1))
+			{
+				s.sendMessage("&cyou aren't a player".replace('&', 'ï¿½'));
 				return false;
 			}
 
-			if (a.length < 1) {
-				s.sendMessage("&cno gamemode :,v".replace('&', '§'));
+			if (a.length < 1)
+			{
+				s.sendMessage("&cno gamemode :,v".replace('&', 'ï¿½'));
 				return false;
 			}
 			String g = a[0];
@@ -29,17 +34,20 @@ public class GameModeCommand implements CommandExecutor {
 			if (a.length > 1)
 				p = Bukkit.getPlayer(a[1]);
 
-			if (p == null) {
-				s.sendMessage("&c:'v".replace('&', '§'));
+			if (p == null)
+			{
+				s.sendMessage("&c:'v".replace('&', 'ï¿½'));
 				return false;
 			}
 
-			if ( !  !  !  !  !  !  !  ! (s instanceof Player)) {
+			if ( !  !  !  !  !  !  !  ! (s instanceof Player))
+			{
 				p = (Player) s;
 			}
 
-			if (p == null) {
-				s.sendMessage("&c:'v".replace('&', '§'));
+			if (p == null)
+			{
+				s.sendMessage("&c:'v".replace('&', 'ï¿½'));
 				return false;
 			}
 			if (g.equalsIgnoreCase("s"))
@@ -53,8 +61,10 @@ public class GameModeCommand implements CommandExecutor {
 			else
 				g = "SURVIVAL";
 
-			for (GameMode m : GameMode.values()) {
-				if (m.name().equalsIgnoreCase(g)) {
+			for (GameMode m : GameMode.values())
+			{
+				if (m.name().equalsIgnoreCase(g))
+				{
 					p.setGameMode(GameMode.valueOf(g.toUpperCase()));
 					s.sendMessage("&athe gamemode of " + p.getName() + " is now " + m.name());
 					continue;

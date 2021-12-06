@@ -10,30 +10,48 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-public class PlayerEntrar implements Listener {
+public class PlayerEntrar implements Listener
+{
 
-    ProCorePlugin plugin;
+    final ProCorePlugin plugin;
 
-    public PlayerEntrar(@NotNull ProCorePlugin plugin) {
+    public PlayerEntrar(@NotNull ProCorePlugin plugin)
+    {
         this.plugin = plugin;
     }
 
     @NotNull
     @EventHandler
-    public final void alEntrar(@NotNull PlayerJoinEvent event) {
-    	new Thread() {
-    		public void run() {
+    public final void alEntrar(@NotNull final PlayerJoinEvent event)
+    {
+    	new Thread()
+        {
+    		public void run()
+            {
     			FileConfiguration config = plugin.getConfig();
-        		if (config.getString("EVENTS.JOIN_EVENT.ENABLE").toString().toUpperCase() == "TRUE") {
+        		if (config.getString("EVENTS.JOIN_EVENT.ENABLE").toString().toUpperCase() == "TRUE")
+                {
                     event.setJoinMessage(null);
 
-                    for (Player player : Bukkit.getOnlinePlayers()) {
-                        player.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("EVENTS.JOIN_EVENT.MESSAGE")));
+                    for (Player player : Bukkit.getOnlinePlayers())
+                    {
+                        player.sendMessage(ChatColor.translateAlternateColorCodes('&', cambioColor(config.getString("EVENTS.JOIN_EVENT.MESSAGE"))));
                     }
-                } else {
+                } else
+                {
                     event.setJoinMessage(null);
                 }
     		}
     	};
+    }
+
+    @NotNull
+    private String cambioColor(@NotNull final String texto)
+    {
+        return ChatColor
+                .translateAlternateColorCodes(
+                        '&', texto.toString()
+                );
+
     }
 }
