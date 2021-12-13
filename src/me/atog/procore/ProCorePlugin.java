@@ -1,13 +1,14 @@
 package me.atog.procore;
 
 import com.sun.istack.internal.NotNull;
+import me.atog.procore.api.ProPlugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import me.atog.procore.commandos.DestroyCommand;
 import me.atog.procore.commandos.GameModeCommand;
 import me.atog.procore.commandos.PluginCommandFlyMode;
 
-public class ProCorePlugin extends JavaPlugin {
+public class ProCorePlugin implements ProPlugin {
 
 	@Override
 	@NotNull
