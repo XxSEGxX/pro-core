@@ -1,11 +1,12 @@
 package me.atog.procore.commandos;
 
+import me.atog.procore.api.ProCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-public class DestroyCommand implements CommandExecutor
+public class DestroyCommand implements ProCommand
 {
 
     protected static String message;

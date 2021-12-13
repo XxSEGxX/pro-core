@@ -2,6 +2,7 @@ package me.atog.procore.eventos;
 
 import com.sun.istack.internal.NotNull;
 import me.atog.procore.ProCorePlugin;
+import me.atog.procore.api.Event;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -10,7 +11,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-public class PlayerEntrar implements Listener
+public class PlayerEntrar implements Event
 {
 
     final ProCorePlugin plugin;

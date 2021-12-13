@@ -1,11 +1,12 @@
 package me.atog.procore;
 
 import com.sun.istack.internal.NotNull;
+import me.atog.procore.api.ProPlugin2;
 import me.atog.procore.eventos.PlayerEntrar;
 
 import java.io.File;
 
-public class ProCorePlugin2 {
+public class ProCorePlugin2 implements ProPlugin2 {
 
 	public static String rutaConfig;
 
