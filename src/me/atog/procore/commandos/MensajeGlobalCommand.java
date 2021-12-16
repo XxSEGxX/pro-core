@@ -41,7 +41,10 @@ implements CommandExecutor
         catch (Exception e)
         {
             Bukkit.getLogger().info("Sorry, error in this :c");
-            e.printStackTrace();
+            for (int i = 0 ; i < c.length(); i++) {
+                Bukkit.broadcastMessage("Sorry, error in this :c");
+                e.printStackTrace();
+            }
         }
         return false;
     }

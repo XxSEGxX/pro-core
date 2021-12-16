@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d0a0fb6-218b-4c82-933b-b67027830ae9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/commandos/DestroyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/commandos/DestroyCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/commandos/GameModeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/commandos/GameModeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/commandos/GeneralCommandOfBestPluginCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/commandos/GeneralCommandOfBestPluginCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/commandos/PluginCommandFlyMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/commandos/PluginCommandFlyMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/eventos/PlayerEntrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/eventos/PlayerEntrar.java" afterDir="false" />
-    </list>
+    <list default="true" id="4d0a0fb6-218b-4c82-933b-b67027830ae9" name="Changes" comment="Añadido comando de esos que son para hacer mensajes globales, super optimizado :3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
