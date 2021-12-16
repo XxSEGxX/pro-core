@@ -14,3 +14,6 @@ commands:
   destroy:
     description: destroy
     aliases: [destroy, kaboom, boom, bye, gusbai, destruir]
+  broadcast:
+    description: broadcast
+    aliases: [bc, b, mg, mensajeglobal, global, globalmessage, messageglobal, gl, msggl, glmsg]

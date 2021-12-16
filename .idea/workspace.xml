@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d0a0fb6-218b-4c82-933b-b67027830ae9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/commandos/DestroyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/commandos/DestroyCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/commandos/GameModeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/commandos/GameModeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/commandos/GeneralCommandOfBestPluginCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/commandos/GeneralCommandOfBestPluginCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/commandos/PluginCommandFlyMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/commandos/PluginCommandFlyMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/eventos/PlayerEntrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/eventos/PlayerEntrar.java" afterDir="false" />
+    <list default="true" id="4d0a0fb6-218b-4c82-933b-b67027830ae9" name="Changes" comment="Limpieza de codigo :D">
+      <change afterPath="$PROJECT_DIR$/src/me/atog/procore/commandos/MensajeGlobalCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/atog/procore/ProCorePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/atog/procore/ProCorePlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="8a08ed47-d63b-44e2-a2f7-bf6b0577adce" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,8 +49,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638795985883</updated>
-      <workItem from="1638795995591" duration="461000" />
+      <workItem from="1638795995591" duration="550000" />
+      <workItem from="1639622530842" duration="1272000" />
     </task>
+    <task id="LOCAL-00001" summary="Limpieza de codigo :D">
+      <created>1638796530485</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638796530486</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -56,5 +75,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Limpieza de codigo :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Limpieza de codigo :D" />
   </component>
 </project>
