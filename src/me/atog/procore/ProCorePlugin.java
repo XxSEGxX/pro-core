@@ -1,7 +1,6 @@
 package me.atog.procore;
 
 import com.sun.istack.internal.NotNull;
-import me.atog.procore.commandos.MensajeGlobalCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import me.atog.procore.commandos.DestroyCommand;
@@ -26,7 +25,6 @@ public class ProCorePlugin extends JavaPlugin {
 		getCommand("gm").setExecutor(new GameModeCommand());
 		getCommand("fly").setExecutor(new PluginCommandFlyMode());
 		getCommand("destroy").setExecutor(new DestroyCommand());
-		getCommand("broadcast").setExecutor(new MensajeGlobalCommand());
 	}
 	
 }
